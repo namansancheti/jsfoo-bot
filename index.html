@@ -5,10 +5,16 @@ Hello World
     </head>
     <body>
         Mobile friendly form:
-        <form>
+        <form id="mobile-form">
             <label for="email">Email: </label>
             <input type="email" id="email" name="email" required>
-            <button type="submit" onclick="window.alert('Form submitted')">Submit</button>
+            <button type="submit">Submit</button>
         </form> 
+    <script>
+        var formEle = document.getElementById('mobile-form');
+        formEle.onsubmit(function() {
+            window.alert('Form submitted');
+        });
+    </script>
     </body>
 </html>
