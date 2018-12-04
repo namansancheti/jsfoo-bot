@@ -8,12 +8,25 @@ Hello World
         <form id="mobile-form">
             <label for="email">Email: </label>
             <input type="email" id="email" name="email" required>
-
+            <br>
             <label for="tel">Tel: </label>
-            <input type="tel" id="tel" name="contact-number" required>
-
+            <input type="tel" id="tel" name="contactNumber" required>
+            <br>
             <label for="price">Price: </label>
-            <input type="number" id="price" name="price" required>
+            <input type="number" id="price" name="price">
+            <br>
+            <label for="price-slider">Price: </label>
+            <input type="range" min="0" max="10" name="price-slider" id="price-slider" step="2">
+            <br>
+            <label for="datetime-local">Local Datetime: </label>
+            <input type="datetime-local" id="datetime-local" name="datettime-local">
+            <br>
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="color">Color: </label>
+            <input type="color" id="color" name="color">
+            <br>
             <button type="submit">Submit</button>
         </form> 
     <script>
