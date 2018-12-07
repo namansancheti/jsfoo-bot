@@ -7,7 +7,7 @@ Hello World
         Mobile friendly form:
         <form id="mobile-form">
             <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required autocomplete="email" autofocus>
+            <input type="email" id="email" name="email" minlength="10" pattern="[a-zA-Z@]" required autocomplete="email" autofocus>
             <br>
             <label for="tel">Tel: </label>
             <input type="tel" id="tel" name="contactNumber" required autocomplete="tel">
@@ -28,7 +28,7 @@ Hello World
             <input type="color" id="color" name="color">
             <br>
             <label for="fav-player">Favourite Player: </label>
-            <input type="text" id="fav-player" name="favPlayer" list="players">
+            <input type="text" id="fav-player" name="favPlayer" list="players" maxlength="13">
             <datalist id="players">
                 <option value="Eden Hazard">
                 <option value="Lionel Messi">
